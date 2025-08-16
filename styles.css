@@ -143,6 +143,88 @@ body {
     overflow: hidden;   
     background: url("images/background-image-for-sign-up.jpg") no-repeat center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;    
+    margin-top: 20vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    background-color: rgba(188, 182, 182, 0.699);  
+    width: max(20rem, 20%);  
+    padding: 2em 3em;    
+}
+
+#logo {
+    width: 50px;
+    opacity: 50%;
+    border-radius: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-block input{
+    display: block;
+    border-radius: 3px;
+    border: 1px ridge gray;
+}
+
+.input-block input:focus {
+    border: 1px solid rgb(89, 193, 228);
+    outline: none;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#password:invalid,
+#confirmed-password:invalid {
+    border: 1px solid red;
+}
+
+label {
+    font-size: 0.85rem;
+    color: rgb(40, 40, 40);
+}
+
+button {        
+    font-family: 'Roboto','Times New Roman', Times, serif;
+    border: none;
+    border-radius: 8px;
+    padding: 1em; 
+    background-color: rgba(135, 207, 235, 0.66);  
+    color: rgb(40, 40, 40); 
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(91, 187, 225, 0.66);
+}
+
+button:active {
+    background-color: rgba(51, 170, 217, 0.66);
+}
+
+.log-in {
+    padding: 2px;
+    border-radius: 5px 10px 5px 10px;
+    background-color: rgba(248, 248, 255, 0.587);
+    font-weight: bold;
+}
+
+#log-in {
+    color: rgb(58, 58, 255);
 }
 
 .credentials {

@@ -6,30 +6,46 @@
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body>    
     <div class="form-container">
+        <img id="logo" src="/images/logo.png" alt="logo">
+
         <form action="#" method="post">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first_name" id="first-name">
+            <div class="input-block">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first_name" id="first-name" required>
+            </div>
 
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last_name" id="last-name">
+            <div class="input-block">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last_name" id="last-name" required>
+            </div>
 
-            <label for="email">EMAIL</label>
-            <input type="email" name="user_email" id="email">
+            <div class="input-block">
+                <label for="email">EMAIL</label>
+                <input type="email" name="user_email" id="email" required>
+            </div>
 
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="text" name="phone_number" id="phone-number">
+            <div class="input-block">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="text" name="phone_number" id="phone-number" required>
+            </div>
 
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
+            <div class="input-block">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" minlength="6" maxlength="18" required>
+            </div>
 
-            <label for="confirmed-password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirmed_password" id="confirmed-password">
+            <div class="input-block">
+                <label for="confirmed-password">CONFIRM PASSWORD</label>
+                <input type="password" name="confirmed_password" id="confirmed-password" minlength="6" maxlength="18" required>
+            </div>
 
             <button type="submit">Create Account</button>
         </form>
     </div>
+
+    <p class="log-in">Already have an account? <a href="#" id="log-in">Log in</a></p>
 
     <p class="credentials">photo by <a href="https://unsplash.com/@arnaudsteckle">Arnauld</a> on <a href="https://unsplash.com/">Unsplash</a></p>
 </body>
